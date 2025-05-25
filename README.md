@@ -1,4 +1,4 @@
-# 🎵 Enhanced Music Player
+# 🎵Music Player
 
 A sleek and modern web-based music player built with **HTML**, **CSS**, and **JavaScript**. It supports custom playlists, shuffle mode, keyboard shortcuts, volume control, and an interactive UI.
 
@@ -17,9 +17,9 @@ A sleek and modern web-based music player built with **HTML**, **CSS**, and **Ja
 
 - **HTML5**
 - **CSS3**
-- **Vanilla JavaScript**
+- **JavaScript**
 
 ## 📸 Preview
 
-![Music Player Screenshot]()
+![Music Player ](https://deeptech104.github.io/Music_player/)
 
