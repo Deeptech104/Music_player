@@ -12,12 +12,12 @@ const trackArtist = document.getElementById('track-artist');
 const albumCover = document.getElementById('album-cover');
 const playlistItems = document.getElementById('playlist-items');
 
-// Playlist data (replace with your own audio files and metadata)
+
 const tracks = [
     {
         title: 'Sample Track 1',
         artist: 'Artist 1',
-        src: 'audio/1.mpeg',
+        src: 'audio/5.mpeg',
         cover: 'https://i.pinimg.com/736x/28/bb/f9/28bbf9a6ca0604e82d6e7a01964a02db.jpg'
     },
     {
@@ -43,9 +43,9 @@ const tracks = [
 let currentTrackIndex = 0;
 let isPlaying = false;
 let isShuffle = false;
-let playedTracks = []; // Track played tracks in shuffle mode
+let playedTracks = []; 
 
-// Populate playlist
+
 function loadPlaylist() {
     playlistItems.innerHTML = '';
     tracks.forEach((track, index) => {
@@ -58,7 +58,7 @@ function loadPlaylist() {
     });
 }
 
-// Load track
+
 function loadTrack(index) {
     const track = tracks[index];
     audioPlayer.src = track.src;
@@ -70,7 +70,7 @@ function loadTrack(index) {
     loadPlaylist();
 }
 
-// Play or pause track
+
 function togglePlayPause() {
     if (isPlaying) {
         audioPlayer.pause();
@@ -94,7 +94,6 @@ function playTrack(index) {
     }
 }
 
-// Get random track index
 function getRandomTrackIndex() {
     const availableTracks = tracks
         .map((_, index) => index)
@@ -106,14 +105,14 @@ function getRandomTrackIndex() {
     return availableTracks[Math.floor(Math.random() * availableTracks.length)];
 }
 
-// Format time (mm:ss)
+
 function formatTime(seconds) {
     const minutes = Math.floor(seconds / 60);
     const secs = Math.floor(seconds % 60);
     return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
 }
 
-// Event listeners
+
 playPauseBtn.addEventListener('click', togglePlayPause);
 
 prevBtn.addEventListener('click', () => {
@@ -170,7 +169,7 @@ audioPlayer.addEventListener('ended', () => {
     playTrack(currentTrackIndex);
 });
 
-// Keyboard navigation
+
 document.addEventListener('keydown', (e) => {
     if (e.key === ' ') {
         e.preventDefault();
@@ -184,6 +183,5 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// Initialize
 loadTrack(currentTrackIndex);
 loadPlaylist();
