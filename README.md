@@ -20,6 +20,6 @@ A sleek and modern web-based music player built with **HTML**, **CSS**, and **Ja
 - **JavaScript**
 
 ## 📸 Preview
+*https://deeptech104.github.io/Music_player/
 
-![Music Player ](https://deeptech104.github.io/Music_player/)
 
