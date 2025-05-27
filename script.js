@@ -17,8 +17,8 @@ const tracks = [
     {
         title: 'Sample Track 1',
         artist: 'Artist 1',
-        src: 'audio/5.mpeg',
-        cover: 'https://www.shazam.com/mkimage/image/thumb/Music221/v4/d1/0e/18/d10e18a2-7cf2-afe8-7709-880a3e7eabc7/artwork.jpg/510x510bb-60.webp'
+        src: 'audio/6.mpeg',
+        cover: 'https://i.ytimg.com/vi/mMgseX5qGac/sddefault.jpg'
     },
     {
         title: 'Sample Track 2',
